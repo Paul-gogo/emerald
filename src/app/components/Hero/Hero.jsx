@@ -26,24 +26,21 @@ const Hero = () => {
 
         {/* Search Bar (Always horizontal) */}
         <div className="w-full max-w-xl">
-          <div className="block gap-7 sm:flex items-center  bg-white rounded-md shadow-md p-2">
-            {/* Icon */}
-            <div className='flex'>
+          <div className="flex flex-col sm:flex-row gap-4 bg-white rounded-md shadow-md p-2 items-stretch">
+            {/* Input with Icon */}
+            <div className="flex flex-1 items-center bg-white rounded-md">
               <div className="flex items-center pl-2">
                 <CiLocationOn className="text-gray-500 text-xl" />
               </div>
-
-              {/* Input */}
               <input
                 type="text"
                 placeholder="Enter location, property type, or keywords..."
-                className="flex-grow px-2 py-2 text-sm text-gray-700 placeholder-gray-400 focus:outline-none"
+                className="flex-grow px-2 py-2 text-sm text-gray-700 placeholder-gray-400 focus:outline-none bg-transparent"
                 required
               />
             </div>
-
             {/* Button */}
-            <button className="bg-green-700 hover:bg-green-800 text-white text-sm font-semibold px-5 py-2 rounded-md transition-all whitespace-nowrap">
+            <button className="bg-green-700 hover:bg-green-800 text-white text-sm font-semibold px-5 py-2 rounded-md transition-all whitespace-nowrap w-full sm:w-auto">
               Search Properties
             </button>
           </div>

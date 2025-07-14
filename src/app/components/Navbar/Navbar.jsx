@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link href="/" className="group text-[#296A50] text-sm">
             <span className="transition-all duration-200 px-2 py-1 rounded group-hover:bg-[#F6F2EA] group-hover:text-[#1F513D]">Home</span>
           </Link>
-          <Link href="/Properties" className="group text-[#296A50] text-sm">
+          <Link href="/properties" className="group text-[#296A50] text-sm">
             <span className="transition-all duration-200 px-2 py-1 rounded group-hover:bg-[#F6F2EA] group-hover:text-[#1F513D]">Properties</span>
           </Link>
           <Link href="/search" className="group text-[#296A50] text-sm">
@@ -59,7 +59,7 @@ const Navbar = () => {
           <Link href="/about" className="block text-[#296A50] text-sm">About</Link>
           <hr />
           <Link href="/login" className="block text-[#296A50] text-sm">Login</Link>
-          <Link href="/sign-up" className="block text-[#296A50] text-sm">Register</Link>
+          <Link href="/sign-up" className="block h-7 pl-[40%] text-white rounded-[8px] bg-[#296A50] text-sm">Sign-Up</Link>
           <Link href="/profile" className="block text-[#296A50] text-sm flex items-center gap-2">
             <CgProfile className="text-lg" /> Profile
           </Link>
