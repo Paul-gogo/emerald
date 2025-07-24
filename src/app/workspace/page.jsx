@@ -12,7 +12,7 @@ const page = () => {
 
   const fetchUserProperties = async () => {
     try {
-      const res = await fetch('https://emerald-haven-api.onrender.com/my-properties', {
+      const res = await fetch('https://emerald-haven-api.onrender.com/api/v1/properties/my-properties', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,
         },
@@ -36,7 +36,7 @@ const page = () => {
     if (!confirmDelete) return;
 
     try {
-      const res = await fetch(`https://emerald-haven-api.onrender.com/${id}`, {
+      const res = await fetch(`https://emerald-haven-api.onrender.com/api/v1/properties/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,

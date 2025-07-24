@@ -38,7 +38,7 @@ const EditPropertyPage = () => {
         const token = localStorage.getItem('token');
         if (!token) throw new Error('Unauthorized');
 
-        const res = await fetch(`https://emerald-haven-api.onrender.com/${numericId}`, {
+        const res = await fetch(`https://emerald-haven-api.onrender.com/api/v1/properties/${numericId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
