@@ -1,8 +1,8 @@
 'use client';
 import React, { Suspense } from 'react';
-import VerifyEmailClient from './VerifyEmailClient';
+import VerifyEmailClient from './verifyEmailClient';
 
-export default function VerifyEmailPage() {
+export default function verifyEmailPage() {
   return (
     <Suspense fallback={<div className="text-center p-10">Loading verification page...</div>}>
       <VerifyEmailClient />
