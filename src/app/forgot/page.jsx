@@ -20,7 +20,7 @@ const page = () => {
     setLoading(true);
 
     try {
-      const res = await fetch('https://emerald-haven-api.onrender.com//api/v1/auth/forgot-password', {
+      const res = await fetch('https://emerald-haven-api.onrender.com/api/v1/auth/forgot-password', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: form.email }),
@@ -43,7 +43,7 @@ const page = () => {
     setLoading(true);
 
     try {
-      const res = await fetch('https://emerald-haven-api.onrender.com//api/v1/auth/reset-password', {
+      const res = await fetch('https://emerald-haven-api.onrender.com/api/v1/auth/reset-password', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),

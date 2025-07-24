@@ -54,7 +54,7 @@ export default function VerifyEmailClient() {
     setIsVerifying(true);
 
     try {
-      const res = await fetch('https://emerald-haven-api.onrender.com//api/v1/auth/verify-email', {
+      const res = await fetch('https://emerald-haven-api.onrender.com/api/v1/auth/verify-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
