@@ -29,7 +29,7 @@ const page = () => {
 
     setIsLoading(true);
     try {
-      const res = await fetch('http://localhost:5000/api/v1/auth/change-password', {
+      const res = await fetch('https://emerald-haven-api.onrender.com/change-password', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',

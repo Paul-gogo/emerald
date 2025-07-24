@@ -16,7 +16,7 @@ const Featured = () => {
         setLoading(true);
         setError(null);
 
-        const res = await fetch('http://localhost:5000/api/v1/properties');
+        const res = await fetch('https://emerald-haven-api.onrender.com/');
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
         const data = await res.json();

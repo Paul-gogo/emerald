@@ -17,7 +17,7 @@ const Page = () => {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/v1/properties');
+        const res = await fetch('https://emerald-haven-api.onrender.com/properties');
         if (!res.ok) throw new Error('Failed to fetch properties');
         const data = await res.json();
         setProperties(data.properties || data);

@@ -54,7 +54,7 @@ export default function VerifyEmailClient() {
     setIsVerifying(true);
 
     try {
-      const res = await fetch('http://localhost:5000/api/v1/auth/verify-email', {
+      const res = await fetch('https://emerald-haven-api.onrender.com/verify-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
@@ -79,7 +79,7 @@ export default function VerifyEmailClient() {
     if (!canResend || !email) return;
 
     try {
-      const res = await fetch('http://localhost:5000/api/v1/auth/resend-code', {
+      const res = await fetch('https://emerald-haven-api.onrender.com/resend-code', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),

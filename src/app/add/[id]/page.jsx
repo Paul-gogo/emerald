@@ -73,7 +73,7 @@ const AddPropertyPage = () => {
         return;
       }
 
-      const res = await fetch('http://localhost:5000/api/v1/properties', {
+      const res = await fetch('https://emerald-haven-api.onrender.com/', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,

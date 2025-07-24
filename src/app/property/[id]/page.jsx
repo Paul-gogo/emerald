@@ -34,7 +34,7 @@ const PropertyDetailsPage = () => {
           return;
         }
 
-        const res = await fetch(`http://localhost:5000/api/v1/properties/${id}`, {
+        const res = await fetch(`https://emerald-haven-api.onrender.com/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

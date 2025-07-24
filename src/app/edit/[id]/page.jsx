@@ -38,7 +38,7 @@ const EditPropertyPage = () => {
         const token = localStorage.getItem('token');
         if (!token) throw new Error('Unauthorized');
 
-        const res = await fetch(`http://localhost:5000/api/v1/properties/${numericId}`, {
+        const res = await fetch(`https://emerald-haven-api.onrender.com/${numericId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -150,7 +150,7 @@ const EditPropertyPage = () => {
 
       formData.images.forEach(image => data.append('images', image));
 
-      const res = await fetch(`http://localhost:5000/api/v1/properties/${numericId}`, {
+      const res = await fetch(`https://emerald-haven-api.onrender.com/properties/${numericId}`, {
         method: 'PUT',
         headers: {
           Authorization: `Bearer ${token}`,
