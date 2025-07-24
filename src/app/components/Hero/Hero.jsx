@@ -40,7 +40,7 @@ const Hero = () => {
               />
             </div>
             {/* Button */}
-            <button className="bg-green-700 hover:bg-green-800 text-white text-sm font-semibold px-5 py-2 rounded-md transition-all whitespace-nowrap w-full sm:w-auto">
+            <button className="bg-[#296A50] hover:bg-[#1F513D] text-white text-sm font-semibold px-5 py-2 rounded-md transition-all whitespace-nowrap w-full sm:w-auto">
               Search Properties
             </button>
           </div>
